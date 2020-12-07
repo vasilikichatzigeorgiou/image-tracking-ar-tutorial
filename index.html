@@ -57,7 +57,12 @@
                       class="clickable"
                       gesture-handler="minScale: 0.25; maxScale: 10" >
             </a-entity>-->
-            <a-video src="./assets/10-second-short-music.mp4"></a-video>
+            <a-assets>
+                <video id="10-second-short-music" autoplay loop="true" src="./assets/10-second-short-music.mp4"></video>
+              </a-assets>
+
+              <!-- Using the asset management system. -->
+              <a-video src="#10-second-short-music" width="16" height="9" position="0 0 -20"></a-video>
         </a-nft>
         <!-- static camera that moves according to the device movemenents -->
         <a-entity camera></a-entity>
