@@ -36,6 +36,7 @@
         <div>Loading, please wait...</div>
     </div>
 
+
     <!-- a-frame scene -->
     <a-scene 
              vr-mode-ui="enabled: false;" 
@@ -50,12 +51,13 @@
         <a-nft type="nft" url="https://vasilikichatzigeorgiou.github.io/image-tracking-ar-tutorial/assets/Earth" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
             <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-            <a-entity gltf-model="./assets/earth/scene.gltf" 
+            <!--<a-entity gltf-model="./assets/earth/scene.gltf" 
                       scale="0.5 0.5 0.5" 
                       position="50 150 0" 
                       class="clickable"
                       gesture-handler="minScale: 0.25; maxScale: 10" >
-            </a-entity>
+            </a-entity>-->
+            <a-video src="http://techslides.com/demos/sample-videos/small.mp4"></a-video>
         </a-nft>
         <!-- static camera that moves according to the device movemenents -->
         <a-entity camera></a-entity>
