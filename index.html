@@ -45,6 +45,9 @@
              arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
              gesture-detector
              id="scene">
+        <a-assets>
+                <video id="10-second-short-music" autoplay loop="true" src="./assets/10-second-short-music.mp4"></video>
+              </a-assets>
         <!-- a-nft is the anchor that defines an Image Tracking entity -->
         <!-- on 'url' use the path to the Image Descriptors created before. -->
         <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
@@ -57,9 +60,7 @@
                       class="clickable"
                       gesture-handler="minScale: 0.25; maxScale: 10" >
             </a-entity>-->
-            <a-assets>
-                <video id="10-second-short-music" autoplay loop="true" src="./assets/10-second-short-music.mp4"></video>
-              </a-assets>
+            
 
               <!-- Using the asset management system. -->
               <a-video src="#10-second-short-music" width="16" height="9" position="0 0 -20"></a-video>
